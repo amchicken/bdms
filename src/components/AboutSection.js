@@ -1,8 +1,10 @@
 import React from 'react';
-import Contact from './Contact';
-import Intro from './Intro';
-import SectionBreak from './SectionBreak';
-import Services from './Services'
+import Contact from './about/Contact';
+import Intro from './about/Intro';
+import SectionBreak from './about/SectionBreak';
+import Services from './about/Services'
+import News from './about/News';
+import Helicopter from './about/Helicopter';
 
 const AboutSection = () => {
     return (
@@ -10,6 +12,8 @@ const AboutSection = () => {
             <Intro />
             <SectionBreak />
             <Services />
+            <News/>
+            <Helicopter/>
             <Contact />
         </div>
     )
