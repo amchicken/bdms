@@ -1,15 +1,18 @@
 import React from 'react';
+import logo from '../assets/logo/Logo.png'
 
 const Intro = () => {
     return (
-        <div className="section-1">
-            [LOGO]
-            <ul>
-                <li>BANGKOK</li>
-                <li>HELICOPTER</li>
-                <li>SERVICES</li>
-                <li><button>RESERVATION</button></li>
-            </ul>
+        <div className="intro">
+            <img src={logo} alt="Logo"/>
+            <div className="bottom">
+                <p>
+                    BANGKOK<br/>
+                    HELICOPTER<br/>
+                    SERVICES<br/>
+                    <button>RESERVATION</button>
+                </p>
+            </div>
         </div>
     );
 };

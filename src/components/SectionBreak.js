@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLine } from '@fortawesome/free-brands-svg-icons'
+import line from '../assets/img/line.png';
+
 
 
 const SectionBreak = () => {
@@ -11,12 +13,14 @@ const SectionBreak = () => {
                 Sky ICU,Flying Limusine,Sightseeing
             </p>
             <div className="line-contact-container">
-                [lineContact]
+                <img src={line} alt="QRline"/>
+                <div>
                 <p>
-                <FontAwesomeIcon className="lineIcon" icon={ faLine } />
-                Line Official Account<br />
-                @Bangkok Helicopter
-                </p>
+                    <FontAwesomeIcon className="lineIcon" icon={ faLine } />
+                    Line Official Account<br />
+                    </p>
+                    <h2>@Bangkok Helicopter</h2>
+                </div>
             </div> 
         </div>
     );

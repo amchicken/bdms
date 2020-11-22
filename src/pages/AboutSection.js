@@ -9,7 +9,7 @@ import Helicopter from '../components/Helicopter';
 const AboutSection = () => {
     return (
         <div className="about-section">
-            <Intro />
+            <Intro/>
             <SectionBreak />
             <Services />
             <News/>

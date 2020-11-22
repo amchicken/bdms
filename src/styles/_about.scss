@@ -1,0 +1,161 @@
+.intro {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 1),
+      rgba(245, 246, 252, 0.3),
+      rgba(245, 246, 252, 0),
+      rgba(245, 246, 252, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0.3),
+      rgba(0, 8, 80, 1)
+    ),
+    url("../assets/img/Helicopter1.png");
+
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  justify-content: space-between;
+
+  img {
+    height: 150px;
+    align-self: center;
+  }
+
+  .bottom {
+    font-family: $font-bold;
+    color: white;
+    font-weight: bold;
+    justify-self: flex-end;
+    padding: 0 15% 5vh 0;
+    font-size: 50px;
+    text-align: end;
+    button {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+}
+
+.sectionbreak {
+  background-color: $color-secondary-darker;
+  //   background-color: tomato;
+  color: white;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  padding: 0 10vw;
+  height: 10vh;
+  align-items: center;
+  p {
+    font-size: 1.2rem;
+  }
+  .line-contact-container {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    img {
+      max-height: 80%;
+    }
+
+    p {
+      padding: 0 1rem;
+      font-size: 1.2rem;
+      .lineIcon {
+        margin-right: 0.3rem;
+        font-size: 2rem;
+      }
+    }
+    h2 {
+      padding: 0 1rem;
+    }
+  }
+}
+
+.services {
+  z-index: -1;
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 8, 80, 1),
+      rgba(0, 8, 80, 0.3),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0),
+      rgba(0, 8, 80, 0)
+    ),
+    url("../assets/img/Helicopter2.png");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $font-primary;
+  color: white;
+  font-weight: bold;
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  .services-content {
+    padding: 0 15% 5vh 0;
+    text-align: end;
+    width: 80%;
+    align-self: flex-end;
+    h1 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 100;
+    }
+    hr {
+      margin: 1rem 0;
+      width: 100%;
+    }
+    .sub-text {
+      font-family: $font-light;
+      letter-spacing: 0.2rem;
+      font-weight: 100;
+    }
+  }
+}
+
+.flying {
+  background-image: url("../assets/img/Plain.png");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: end;
+  div {
+    width: 40%;
+    h4 {
+      padding: 0 2rem 1rem 0;
+      font-size: 2rem;
+      color: $color-secondary;
+    }
+    p {
+      padding: 0 2rem 0 0;
+      font-size: 0.75rem;
+    }
+  }
+
+  img {
+    width: 50%;
+    border-left: $color-secondary solid 7px;
+    padding-left: 2vw;
+  }
+}

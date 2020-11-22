@@ -1,14 +1,60 @@
+@font-face {
+  font-family: "SFUIDisplay-Regular";
+
+  src: url("./fonts/SFUIDisplay-Regular.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/SFUIDisplay-Regular.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Bold";
+
+  src: url("./fonts/SFUIDisplay-Bold.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/SFUIDisplay-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Light";
+
+  src: url("./fonts/SFUIDisplay-Light.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/SFUIDisplay-Light.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
 $color-primary: #fd0101;
 $color-secondary: #0f3193;
+$color-secondary-darker: #000c4f;
+
+$font-primary: "SFUIDisplay-Regular";
+$font-bold: "SFUIDisplay-Bold";
+$font-light: "SFUIDisplay-Light";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $font-primary;
+  letter-spacing: 0.1rem;
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+  display: none;
+  position: fixed;
+  width: 5px;
+}
+
+button {
+  border: none;
+  background-color: $color-secondary-darker;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;
 }
 
 @import "./nav";
+@import "./about";
