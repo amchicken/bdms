@@ -1,10 +1,10 @@
 import React from 'react';
-import Contact from './about/Contact';
-import Intro from './about/Intro';
-import SectionBreak from './about/SectionBreak';
-import Services from './about/Services'
-import News from './about/News';
-import Helicopter from './about/Helicopter';
+import Contact from '../components/Contact';
+import Intro from '../components/Intro';
+import SectionBreak from '../components/SectionBreak';
+import Services from '../components/Services'
+import News from '../components/News';
+import Helicopter from '../components/Helicopter';
 
 const AboutSection = () => {
     return (

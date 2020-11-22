@@ -1,8 +1,8 @@
 import React from 'react';
-import HelicopterGeneral from './helicopter/HelicopterGeneral';
-import HelicopterPerformance from './helicopter/HelicopterPerformance'
-import HelicopterWeights from './helicopter/HelicopterWeights'
-import HelicopterDimensions from './helicopter/HelicopterDimensions'
+import HelicopterGeneral from './HelicopterGeneral';
+import HelicopterPerformance from './HelicopterPerformance'
+import HelicopterWeights from './HelicopterWeights'
+import HelicopterDimensions from './HelicopterDimensions'
 
 const Helicopter = () => {
     return (

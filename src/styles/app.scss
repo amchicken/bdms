@@ -1,0 +1,14 @@
+$color-primary: #fd0101;
+$color-secondary: #0f3193;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+@import "./nav";
