@@ -40,6 +40,7 @@ $font-light: "SFUIDisplay-Light";
   padding: 0;
   box-sizing: border-box;
   font-family: $font-primary;
+  // font-size:62.5%;
   letter-spacing: 0.1rem;
 }
 
@@ -58,6 +59,26 @@ button {
   border-radius: 0;
 }
 
+.divNav {
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .divNav-logo {
+    position: absolute;
+    justify-self: flex-start;
+    height: 6vh;
+    left: 5vw;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    color: $color-secondary;
+  }
+}
+
 .line-section {
   height: 2rem;
   margin: 0 -0.5rem;
@@ -72,3 +93,5 @@ button {
 
 @import "./nav";
 @import "./about";
+@import "./reservation";
+@import "./contactus";

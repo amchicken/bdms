@@ -47,9 +47,8 @@
   //   background-color: tomato;
   color: white;
   display: flex;
-  overflow: hidden;
   justify-content: space-between;
-  padding: 0 10vw;
+  padding: 0 5vw;
   height: 10vh;
   align-items: center;
   p {
@@ -77,6 +76,12 @@
     }
     h2 {
       padding: 0 1rem;
+    }
+    @media only screen and (max-width: 1024px) {
+      div {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
@@ -142,6 +147,93 @@
   }
 }
 
+.news {
+  .banner {
+    display: flex;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15%;
+    background-image: linear-gradient(
+      to right,
+      rgba(8, 25, 74, 1),
+      rgba(15, 49, 147, 1)
+    );
+    color: white;
+    div {
+      display: flex;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  //banner end
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    .content:nth-child(even) {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .content {
+      width: 90vw;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 2rem;
+      img {
+        height: 400px;
+        width: 50%;
+        z-index: -5;
+      }
+
+      @media only screen and (max-width: 1024px) {
+        flex-direction: column;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      div {
+        padding: 0 3rem;
+        h4 {
+          color: $color-secondary;
+          font-size: 2rem;
+          padding: 1rem 0;
+        }
+        .link-group {
+          margin-top: 1rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0;
+          a {
+            padding: 0;
+            margin: 0;
+          }
+          button {
+            padding: 0;
+            margin: 0;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: darkgray;
+        }
+        button {
+          background: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
 .flying {
   background-image: url("../assets/img/Plain.png");
   height: 1000px;
@@ -150,9 +242,17 @@
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   text-align: end;
-  div {
+  width: 100vw;
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+  .flying-content {
+    @media only screen and (max-width: 1024px) {
+      width: 80%;
+      padding: 5vh 5vw;
+    }
     width: 40%;
     h4 {
       padding: 0 2rem 1rem 0;
@@ -167,6 +267,7 @@
 
   img {
     width: 50%;
+    min-width: 550px;
     border-left: $color-secondary solid 7px;
     padding-left: 2vw;
   }
@@ -195,20 +296,35 @@
   }
 
   .helicopter-detail-container {
-    div {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    z-index: -2;
+    :nth-child(odd) {
+      justify-content: flex-end;
+    }
+    .container {
+      display: flex;
+      position: relative;
       height: 800px;
+      overflow: hidden;
+      z-index: 2;
       img {
         position: absolute;
-        z-index: -2;
+        height: 800px;
+        width: 100%;
+        z-index: -10;
+        overflow: hidden;
       }
 
       .details {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 100%;
+        position: absolute;
+        height: 800px;
         width: 350px;
-        background-color: rgba($color: #000000, $alpha: 0.6);
+        background-color: rgba(#000000, 0.6);
         color: white;
         font-family: $font-light;
         font-weight: 100;
@@ -222,9 +338,17 @@
         }
       }
     }
+
+    .hiddendetailsR {
+      transform: translate(350px, 0);
+    }
+
+    .hiddendetailsL {
+      transform: translate(-350px, 0);
+    }
   }
 
-  .reserve {
+  .about-reserve {
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -234,6 +358,7 @@
       color: $color-secondary;
       font-size: 2rem;
       margin-bottom: 15px;
+      text-align: center;
     }
     button {
       font-size: 1.8rem;

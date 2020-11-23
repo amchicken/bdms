@@ -1,7 +1,8 @@
 import React from 'react';
 import logo from '../assets/logo/Logo.png'
 
-const Intro = () => {
+const Intro = ({isReservationClose,setIsReservationClose}) => {
+    const closeHandle = () => setIsReservationClose(!isReservationClose);
     return (
         <div className="intro">
             <img src={logo} alt="Logo"/>
@@ -10,7 +11,7 @@ const Intro = () => {
                     BANGKOK<br/>
                     HELICOPTER<br/>
                     SERVICES<br/>
-                    <button>RESERVATION</button>
+                    <button onClick={closeHandle}>RESERVATION</button>
                 </p>
             </div>
         </div>

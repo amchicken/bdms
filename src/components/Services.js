@@ -27,7 +27,7 @@ const Services = () => {
             </div>
             
             <div className="flying">
-                <div>
+                <div className="flying-content">
                 <h4>Flying Limousine</h4>
                 <p>
                     Our helicopter MBB-BK117 C-2 is an ideal 
@@ -35,7 +35,7 @@ const Services = () => {
                     equipped with the most advances avionics flight 
                     instrument for maximum safety and effective mode of 
                     transport. The spacious volume and air-conditioned 
-                    cabin is accessible via the large slide-doors & rear 
+                    cabin is accessible via the large slide-doors and rear 
                     mshell doors for straight-in loading of ideal baggage 
                     and golf bags. 
                     <br/><br/>

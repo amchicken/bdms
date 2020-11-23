@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
@@ -6,9 +6,9 @@ import th from '../assets/icon/th.png';
 import en from '../assets/icon/en.png';
 import line from '../assets/img/line.png';
 
-const Navbar = () => {
-    const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+const Navbar = ({isReservationClose,setIsReservationClose,isNavCollapsed,setIsNavCollapsed}) => {
     const toggleHandle = () => setIsNavCollapsed(!isNavCollapsed);
+    const closeHandle = () => setIsReservationClose(!isReservationClose);
     return (
         <div className="nav">
             <FontAwesomeIcon onClick={toggleHandle} icon={faBars} className="toggle-nav"/>
@@ -29,8 +29,8 @@ const Navbar = () => {
                         <ul className="nav-menu">
                             <li><Link to="/news">NEWS</Link></li>
                             <li><Link to="/">ABOUT US</Link></li>
-                            <li><Link to="/news">CONTACT</Link></li>
-                            <li><Link to="/">RESERVE</Link></li>
+                            <li><Link to="/contact">CONTACT</Link></li>
+                            <li><p onClick={closeHandle} id="nav-reserve">RESERVE</p></li>
                             <li><Link to="/">INTRANET</Link></li>
                         </ul>
                     </div>

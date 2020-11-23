@@ -6,14 +6,14 @@ import Services from '../components/Services'
 import News from '../components/News';
 import Helicopter from '../components/Helicopter';
 
-const AboutSection = () => {
+const AboutSection = ({isReservationClose,setIsReservationClose}) => {
     return (
-        <div className="about-section">
-            <Intro/>
+        <div className="about">
+            <Intro isReservationClose={isReservationClose} setIsReservationClose={setIsReservationClose}/>
             <SectionBreak />
             <Services />
             <News/>
-            <Helicopter/>
+            <Helicopter isReservationClose={isReservationClose} setIsReservationClose={setIsReservationClose}/>
             <Contact />
         </div>
     )
