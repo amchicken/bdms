@@ -17,9 +17,9 @@ const News = () => {
                     <div>
                         <h4>Bring H145 helicopter in Emergency Medical Service</h4>
                         <p>bring H145 helicopter in Emergency Medical Service configured for static display as part of the product showcase of Airbus Helicopters at Langkawi International Maritime & Aerospace Exhibition (LIMA) 2019, during 26 – 30 March 2019 at the Mahsuri International Exhibition</p>
-                        <p>[timestamp] 26 Mar 2020 08:32 AM</p>
+                        <p className="time-stamp"> 26 Mar 2020 08:32 AM</p>
                         <div className="link-group">
-                            <Link to='/news'>MORE DETAILS</Link>
+                            <Link to='/news/id/1'>MORE DETAILS</Link>
                             <div>
                                 <button>O</button>
                                 <button>O</button>

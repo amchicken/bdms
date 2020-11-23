@@ -76,6 +76,15 @@ button {
     display: flex;
     align-items: center;
     color: $color-secondary;
+    img {
+      left: 0;
+      height: 1.5rem;
+      padding-right: 5px;
+    }
+    h1 {
+      font-weight: bold;
+      font-family: $font-bold;
+    }
   }
 }
 
@@ -95,3 +104,4 @@ button {
 @import "./about";
 @import "./reservation";
 @import "./contactus";
+@import "./news";
