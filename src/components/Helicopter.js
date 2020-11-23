@@ -3,19 +3,23 @@ import HelicopterGeneral from './HelicopterGeneral';
 import HelicopterPerformance from './HelicopterPerformance'
 import HelicopterWeights from './HelicopterWeights'
 import HelicopterDimensions from './HelicopterDimensions'
+import border from '../assets/border2.svg'
 
 const Helicopter = () => {
     return (
         <div className="helicopter">
-            <div>
-                <h1>HELICOPTER</h1>
+            <div className="banner">
+                <div>
+                    <img src={border} alt="" className="line-section"/>
+                    <h1>HELICOPTER</h1>
+                </div> 
                 <button>RESERVATION</button>
             </div>
-            <div>
-                <h2>SPECIFICATION</h2>
-                <div className="section">
-                    <img src="https://via.placeholder.com/150" alt="bg"/>
+            <div className="helicopter-detail-container">
+                <div>
+                    <img src="https://via.placeholder.com/800" alt="bg"/>
                     <div className="details">
+                        <h2>SPECIFICATION</h2>
                         <HelicopterGeneral
                         model="MBB-BK117 C-2"
                         msn="9108"

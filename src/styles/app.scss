@@ -29,6 +29,7 @@
 $color-primary: #fd0101;
 $color-secondary: #0f3193;
 $color-secondary-darker: #000c4f;
+$color-gray: #f0f0f0;
 
 $font-primary: "SFUIDisplay-Regular";
 $font-bold: "SFUIDisplay-Bold";
@@ -54,6 +55,19 @@ button {
   color: white;
   font-size: 1.2rem;
   padding: 0.5rem 1.2rem;
+  border-radius: 0;
+}
+
+.line-section {
+  height: 2rem;
+  margin: 0 -0.5rem;
+}
+
+.st0 {
+  fill: #0f3193;
+}
+.st1 {
+  fill: #fd0101;
 }
 
 @import "./nav";

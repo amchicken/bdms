@@ -1,12 +1,16 @@
 import React from 'react';
 import banner from '../assets/img/banner.png'
+import border from '../assets/border.svg'
 
 const Services = () => {
     return (
         <div>
             <div className="services">
                 <div className="services-content">
+                    <div>
                     <h1>SERVICES</h1>
+                    <img src={border} alt="" className="line-section"/>
+                    </div>
                     <h3>Helicopter Air Ambulance</h3>
                     <p className="main-text">
                         24 hours a day service in Thailand and 
