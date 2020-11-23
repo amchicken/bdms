@@ -101,12 +101,27 @@
       justify-content: space-between;
       align-content: center;
       padding: 1rem 5vw;
-      flex-wrap: wrap;
     }
+
     .split {
-      width: 45%;
-      padding: 0;
+      width: 48%;
+      padding: 1rem 0rem;
       margin: 0;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .split {
+        width: 100%;
+      }
+      .input-name {
+        padding: 0.3rem 0;
+      }
+      .input-group {
+        padding: 0.3rem 0;
+      }
+      .input-name {
+        flex-direction: column;
+      }
     }
   }
 }
